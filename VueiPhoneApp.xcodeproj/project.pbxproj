@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3455AABE1E90B0B30049349A /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3455AABD1E90B0B30049349A /* libstdc++.tbd */; };
+		3455AAC61E90BA6E0049349A /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3455AAC11E90BA6E0049349A /* libWeChatSDK.a */; };
+		3455AAC71E90BA6E0049349A /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3455AAC21E90BA6E0049349A /* README.txt */; };
+		3455AAC91E90BACE0049349A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3455AAC81E90BACE0049349A /* libz.tbd */; };
+		3455AACB1E90BADA0049349A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3455AACA1E90BADA0049349A /* libsqlite3.0.tbd */; };
+		3455AACD1E90BAEC0049349A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3455AACC1E90BAEC0049349A /* libc++.tbd */; };
+		3455AACF1E90BAFB0049349A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3455AACE1E90BAFB0049349A /* CFNetwork.framework */; };
+		347BEC521E90F59C00ED7873 /* AliOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 347BEC511E90F59C00ED7873 /* AliOrder.m */; };
+		347BEC541E9100EF00ED7873 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347BEC531E9100EF00ED7873 /* JavaScriptCore.framework */; };
+		347BEC571E91099100ED7873 /* ThirdModuleConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BEC561E91099100ED7873 /* ThirdModuleConnectivity.swift */; };
+		34874DDD1E90EE5600D4AB62 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34874DDB1E90EE5600D4AB62 /* AlipaySDK.bundle */; };
+		34874DDE1E90EE5600D4AB62 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34874DDC1E90EE5600D4AB62 /* AlipaySDK.framework */; };
+		34874DE01E90F2DC00D4AB62 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34874DDF1E90F2DC00D4AB62 /* QuartzCore.framework */; };
+		34874DE21E90F2E400D4AB62 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34874DE11E90F2E400D4AB62 /* CoreText.framework */; };
+		34874DE41E90F30200D4AB62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34874DE31E90F30200D4AB62 /* UIKit.framework */; };
+		34874DE61E90F30A00D4AB62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34874DE51E90F30A00D4AB62 /* Foundation.framework */; };
+		34874DE81E90F31200D4AB62 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34874DE71E90F31200D4AB62 /* CoreMotion.framework */; };
+		34BE70A41E909C3B00EC5286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE70A31E909C3B00EC5286 /* AppDelegate.swift */; };
+		34BE70A61E909C3B00EC5286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE70A51E909C3B00EC5286 /* ViewController.swift */; };
+		34BE70A91E909C3B00EC5286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34BE70A71E909C3B00EC5286 /* Main.storyboard */; };
+		34BE70AB1E909C3B00EC5286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BE70AA1E909C3B00EC5286 /* Assets.xcassets */; };
+		34BE70AE1E909C3B00EC5286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34BE70AC1E909C3B00EC5286 /* LaunchScreen.storyboard */; };
+		34BE70BC1E90A54100EC5286 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BE70BB1E90A54100EC5286 /* Security.framework */; };
+		34BE70BE1E90A54900EC5286 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BE70BD1E90A54900EC5286 /* SystemConfiguration.framework */; };
+		34BE70C01E90A55400EC5286 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BE70BF1E90A55400EC5286 /* CoreGraphics.framework */; };
+		34BE70C21E90A55F00EC5286 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BE70C11E90A55F00EC5286 /* libsqlite3.tbd */; };
+		34BE70C41E90A56A00EC5286 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BE70C31E90A56A00EC5286 /* CoreTelephony.framework */; };
+		34BE70CB1E90A5FD00EC5286 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34BE70C91E90A5FD00EC5286 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		34BE70CC1E90A5FD00EC5286 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BE70CA1E90A5FD00EC5286 /* TencentOpenAPI.framework */; };
+		34BE70D11E90A8F100EC5286 /* Laaa.m in Sources */ = {isa = PBXBuildFile; fileRef = 34BE70D01E90A8F100EC5286 /* Laaa.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3455AABD1E90B0B30049349A /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		3455AAC11E90BA6E0049349A /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		3455AAC21E90BA6E0049349A /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		3455AAC31E90BA6E0049349A /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		3455AAC41E90BA6E0049349A /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		3455AAC51E90BA6E0049349A /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		3455AAC81E90BACE0049349A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3455AACA1E90BADA0049349A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3455AACC1E90BAEC0049349A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3455AACE1E90BAFB0049349A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		347BEC501E90F59C00ED7873 /* AliOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliOrder.h; sourceTree = "<group>"; };
+		347BEC511E90F59C00ED7873 /* AliOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliOrder.m; sourceTree = "<group>"; };
+		347BEC531E9100EF00ED7873 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		347BEC551E91041D00ED7873 /* VueiPhoneApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VueiPhoneApp.entitlements; sourceTree = "<group>"; };
+		347BEC561E91099100ED7873 /* ThirdModuleConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdModuleConnectivity.swift; sourceTree = "<group>"; };
+		34874DDB1E90EE5600D4AB62 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		34874DDC1E90EE5600D4AB62 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		34874DDF1E90F2DC00D4AB62 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		34874DE11E90F2E400D4AB62 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		34874DE31E90F30200D4AB62 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		34874DE51E90F30A00D4AB62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		34874DE71E90F31200D4AB62 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		34BE70A01E909C3B00EC5286 /* VueiPhoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VueiPhoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34BE70A31E909C3B00EC5286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34BE70A51E909C3B00EC5286 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34BE70A81E909C3B00EC5286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34BE70AA1E909C3B00EC5286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34BE70AD1E909C3B00EC5286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34BE70AF1E909C3B00EC5286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34BE70BB1E90A54100EC5286 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		34BE70BD1E90A54900EC5286 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		34BE70BF1E90A55400EC5286 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		34BE70C11E90A55F00EC5286 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		34BE70C31E90A56A00EC5286 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		34BE70C91E90A5FD00EC5286 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TencentOpenApi_IOS_Bundle.bundle; path = iOS_SDK_V3.2.0./TencentOpenApi_IOS_Bundle.bundle; sourceTree = SOURCE_ROOT; };
+		34BE70CA1E90A5FD00EC5286 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = iOS_SDK_V3.2.0./TencentOpenAPI.framework; sourceTree = SOURCE_ROOT; };
+		34BE70CE1E90A8F100EC5286 /* VueiPhoneApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VueiPhoneApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		34BE70CF1E90A8F100EC5286 /* Laaa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Laaa.h; sourceTree = "<group>"; };
+		34BE70D01E90A8F100EC5286 /* Laaa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Laaa.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34BE709D1E909C3B00EC5286 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				347BEC541E9100EF00ED7873 /* JavaScriptCore.framework in Frameworks */,
+				34874DE81E90F31200D4AB62 /* CoreMotion.framework in Frameworks */,
+				34874DE61E90F30A00D4AB62 /* Foundation.framework in Frameworks */,
+				34874DE41E90F30200D4AB62 /* UIKit.framework in Frameworks */,
+				34BE70C01E90A55400EC5286 /* CoreGraphics.framework in Frameworks */,
+				34874DE21E90F2E400D4AB62 /* CoreText.framework in Frameworks */,
+				34874DE01E90F2DC00D4AB62 /* QuartzCore.framework in Frameworks */,
+				3455AAC91E90BACE0049349A /* libz.tbd in Frameworks */,
+				3455AACD1E90BAEC0049349A /* libc++.tbd in Frameworks */,
+				3455AACF1E90BAFB0049349A /* CFNetwork.framework in Frameworks */,
+				3455AACB1E90BADA0049349A /* libsqlite3.0.tbd in Frameworks */,
+				3455AABE1E90B0B30049349A /* libstdc++.tbd in Frameworks */,
+				34BE70C41E90A56A00EC5286 /* CoreTelephony.framework in Frameworks */,
+				3455AAC61E90BA6E0049349A /* libWeChatSDK.a in Frameworks */,
+				34BE70CC1E90A5FD00EC5286 /* TencentOpenAPI.framework in Frameworks */,
+				34BE70C21E90A55F00EC5286 /* libsqlite3.tbd in Frameworks */,
+				34874DDE1E90EE5600D4AB62 /* AlipaySDK.framework in Frameworks */,
+				34BE70BE1E90A54900EC5286 /* SystemConfiguration.framework in Frameworks */,
+				34BE70BC1E90A54100EC5286 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3455AABF1E90BA590049349A /* WeChatOpen */ = {
+			isa = PBXGroup;
+			children = (
+				3455AAC01E90BA6E0049349A /* OpenSDK1.7.7 */,
+			);
+			name = WeChatOpen;
+			sourceTree = "<group>";
+		};
+		3455AAC01E90BA6E0049349A /* OpenSDK1.7.7 */ = {
+			isa = PBXGroup;
+			children = (
+				3455AAC11E90BA6E0049349A /* libWeChatSDK.a */,
+				3455AAC21E90BA6E0049349A /* README.txt */,
+				3455AAC31E90BA6E0049349A /* WechatAuthSDK.h */,
+				3455AAC41E90BA6E0049349A /* WXApi.h */,
+				3455AAC51E90BA6E0049349A /* WXApiObject.h */,
+			);
+			path = OpenSDK1.7.7;
+			sourceTree = "<group>";
+		};
+		34874DDA1E90EE3900D4AB62 /* AliPay */ = {
+			isa = PBXGroup;
+			children = (
+				347BEC501E90F59C00ED7873 /* AliOrder.h */,
+				347BEC511E90F59C00ED7873 /* AliOrder.m */,
+				34874DDB1E90EE5600D4AB62 /* AlipaySDK.bundle */,
+				34874DDC1E90EE5600D4AB62 /* AlipaySDK.framework */,
+			);
+			name = AliPay;
+			sourceTree = "<group>";
+		};
+		34BE70971E909C3B00EC5286 = {
+			isa = PBXGroup;
+			children = (
+				34BE70A21E909C3B00EC5286 /* VueiPhoneApp */,
+				34BE70A11E909C3B00EC5286 /* Products */,
+				34BE70BA1E90A54100EC5286 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		34BE70A11E909C3B00EC5286 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34BE70A01E909C3B00EC5286 /* VueiPhoneApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34BE70A21E909C3B00EC5286 /* VueiPhoneApp */ = {
+			isa = PBXGroup;
+			children = (
+				347BEC551E91041D00ED7873 /* VueiPhoneApp.entitlements */,
+				34874DDA1E90EE3900D4AB62 /* AliPay */,
+				3455AABF1E90BA590049349A /* WeChatOpen */,
+				34BE70B51E90A4D200EC5286 /* QQOpen */,
+				34BE70A31E909C3B00EC5286 /* AppDelegate.swift */,
+				34BE70CF1E90A8F100EC5286 /* Laaa.h */,
+				34BE70D01E90A8F100EC5286 /* Laaa.m */,
+				34BE70A51E909C3B00EC5286 /* ViewController.swift */,
+				347BEC561E91099100ED7873 /* ThirdModuleConnectivity.swift */,
+				34BE70A71E909C3B00EC5286 /* Main.storyboard */,
+				34BE70AA1E909C3B00EC5286 /* Assets.xcassets */,
+				34BE70AC1E909C3B00EC5286 /* LaunchScreen.storyboard */,
+				34BE70AF1E909C3B00EC5286 /* Info.plist */,
+				34BE70CE1E90A8F100EC5286 /* VueiPhoneApp-Bridging-Header.h */,
+			);
+			path = VueiPhoneApp;
+			sourceTree = "<group>";
+		};
+		34BE70B51E90A4D200EC5286 /* QQOpen */ = {
+			isa = PBXGroup;
+			children = (
+				34BE70C91E90A5FD00EC5286 /* TencentOpenApi_IOS_Bundle.bundle */,
+				34BE70CA1E90A5FD00EC5286 /* TencentOpenAPI.framework */,
+			);
+			name = QQOpen;
+			sourceTree = "<group>";
+		};
+		34BE70BA1E90A54100EC5286 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				347BEC531E9100EF00ED7873 /* JavaScriptCore.framework */,
+				34874DE71E90F31200D4AB62 /* CoreMotion.framework */,
+				34874DE51E90F30A00D4AB62 /* Foundation.framework */,
+				34874DE31E90F30200D4AB62 /* UIKit.framework */,
+				34874DE11E90F2E400D4AB62 /* CoreText.framework */,
+				34874DDF1E90F2DC00D4AB62 /* QuartzCore.framework */,
+				3455AACE1E90BAFB0049349A /* CFNetwork.framework */,
+				3455AACC1E90BAEC0049349A /* libc++.tbd */,
+				3455AACA1E90BADA0049349A /* libsqlite3.0.tbd */,
+				3455AAC81E90BACE0049349A /* libz.tbd */,
+				3455AABD1E90B0B30049349A /* libstdc++.tbd */,
+				34BE70C31E90A56A00EC5286 /* CoreTelephony.framework */,
+				34BE70C11E90A55F00EC5286 /* libsqlite3.tbd */,
+				34BE70BF1E90A55400EC5286 /* CoreGraphics.framework */,
+				34BE70BD1E90A54900EC5286 /* SystemConfiguration.framework */,
+				34BE70BB1E90A54100EC5286 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34BE709F1E909C3B00EC5286 /* VueiPhoneApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34BE70B21E909C3B00EC5286 /* Build configuration list for PBXNativeTarget "VueiPhoneApp" */;
+			buildPhases = (
+				34BE709C1E909C3B00EC5286 /* Sources */,
+				34BE709D1E909C3B00EC5286 /* Frameworks */,
+				34BE709E1E909C3B00EC5286 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VueiPhoneApp;
+			productName = VueiPhoneApp;
+			productReference = 34BE70A01E909C3B00EC5286 /* VueiPhoneApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34BE70981E909C3B00EC5286 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "海底捞";
+				TargetAttributes = {
+					34BE709F1E909C3B00EC5286 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = J6554N9927;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 34BE709B1E909C3B00EC5286 /* Build configuration list for PBXProject "VueiPhoneApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34BE70971E909C3B00EC5286;
+			productRefGroup = 34BE70A11E909C3B00EC5286 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34BE709F1E909C3B00EC5286 /* VueiPhoneApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34BE709E1E909C3B00EC5286 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34874DDD1E90EE5600D4AB62 /* AlipaySDK.bundle in Resources */,
+				34BE70CB1E90A5FD00EC5286 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				34BE70AE1E909C3B00EC5286 /* LaunchScreen.storyboard in Resources */,
+				34BE70AB1E909C3B00EC5286 /* Assets.xcassets in Resources */,
+				34BE70A91E909C3B00EC5286 /* Main.storyboard in Resources */,
+				3455AAC71E90BA6E0049349A /* README.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34BE709C1E909C3B00EC5286 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34BE70D11E90A8F100EC5286 /* Laaa.m in Sources */,
+				34BE70A61E909C3B00EC5286 /* ViewController.swift in Sources */,
+				347BEC521E90F59C00ED7873 /* AliOrder.m in Sources */,
+				34BE70A41E909C3B00EC5286 /* AppDelegate.swift in Sources */,
+				347BEC571E91099100ED7873 /* ThirdModuleConnectivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		34BE70A71E909C3B00EC5286 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34BE70A81E909C3B00EC5286 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34BE70AC1E909C3B00EC5286 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34BE70AD1E909C3B00EC5286 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34BE70B01E909C3B00EC5286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34BE70B11E909C3B00EC5286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34BE70B31E909C3B00EC5286 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = J6554N9927;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VueiPhoneApp",
+					"$(PROJECT_DIR)/iOS_SDK_V3.2.0.",
+				);
+				INFOPLIST_FILE = VueiPhoneApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VueiPhoneApp/OpenSDK1.7.7",
+				);
+				OTHER_LDFLAGS = (
+					"-fobjc-arc",
+					"-Objc",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdl.VueiPhoneApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VueiPhoneApp/VueiPhoneApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		34BE70B41E909C3B00EC5286 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = J6554N9927;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VueiPhoneApp",
+					"$(PROJECT_DIR)/iOS_SDK_V3.2.0.",
+				);
+				INFOPLIST_FILE = VueiPhoneApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VueiPhoneApp/OpenSDK1.7.7",
+				);
+				OTHER_LDFLAGS = (
+					"-fobjc-arc",
+					"-Objc",
+					"-all_load",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hdl.VueiPhoneApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VueiPhoneApp/VueiPhoneApp-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34BE709B1E909C3B00EC5286 /* Build configuration list for PBXProject "VueiPhoneApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34BE70B01E909C3B00EC5286 /* Debug */,
+				34BE70B11E909C3B00EC5286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34BE70B21E909C3B00EC5286 /* Build configuration list for PBXNativeTarget "VueiPhoneApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34BE70B31E909C3B00EC5286 /* Debug */,
+				34BE70B41E909C3B00EC5286 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34BE70981E909C3B00EC5286 /* Project object */;
+}

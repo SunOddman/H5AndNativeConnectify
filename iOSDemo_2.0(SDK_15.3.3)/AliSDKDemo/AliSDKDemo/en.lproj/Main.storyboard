@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="eZY-ID-Gaj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--支付宝Demo-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="APViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="支付宝Demo" id="mcK-kA-Z6H">
+                        <barButtonItem key="rightBarButtonItem" title="URLPay" id="aZI-0M-FbU">
+                            <connections>
+                                <action selector="onUrlPay:" destination="vXZ-lx-hvc" id="ZTu-Tr-NXO"/>
+                                <segue destination="b0x-TI-mnL" kind="push" id="Mxp-vh-ea1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789" y="-55"/>
+        </scene>
+        <!--URLPayDemo-->
+        <scene sceneID="hQi-6m-dwo">
+            <objects>
+                <viewController id="b0x-TI-mnL" customClass="APWebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sFw-OZ-dwE" customClass="UIWebView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="URLPayDemo" id="LRF-eE-BaJ">
+                        <barButtonItem key="rightBarButtonItem" title="openUrl" id="TYf-yz-xDQ">
+                            <connections>
+                                <action selector="onOpenUrlInput:" destination="b0x-TI-mnL" id="oom-AS-Jag"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="sFw-OZ-dwE" id="5V0-Cs-QeP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GAI-G8-fl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261" y="-55"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CWN-ba-6P9">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="eZY-ID-Gaj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6mo-wa-xZ1">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="1cc-Lh-KXk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FfE-GQ-14y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="367" y="-55"/>
+        </scene>
+    </scenes>
+</document>
