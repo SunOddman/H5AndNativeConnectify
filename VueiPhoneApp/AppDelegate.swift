@@ -50,14 +50,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
         // 腾讯开发平台
         let tencent = TencentOAuth.handleOpen(url)
-        let wechat = WXApi.handleOpen(url, delegate: self.webVc)
+        let wechat = WXApi.handleOpen(url, delegate: self.webVc?.connectivity)
         return tencent || wechat
     }
     
     /// OpenURL
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         let tencent = TencentOAuth.handleOpen(url)
-        let wechat = WXApi.handleOpen(url, delegate: self.webVc)
+        let wechat = WXApi.handleOpen(url, delegate: self.webVc?.connectivity)
         return tencent || wechat
     }
 

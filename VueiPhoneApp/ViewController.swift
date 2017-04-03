@@ -16,10 +16,12 @@ import WebKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var webView: WebView!
     
     var connectivity = ThirdModuleConnectivity()
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,8 +31,8 @@ class ViewController: UIViewController {
         // UI 设置
         webView.scrollView.bounces = false
         webView.uiDelegate = self
-        webView.load(URLRequest(url: URL(string: "https://www.baidu.com/")!))
-        
+//        webView.load(URLRequest(url: URL(string: "https://www.baidu.com/")!))
+        webView.loadUrl(string: "https://www.baidu.com/")
         webView.configuration.userContentController.add(self.connectivity, name: "closeMe")
         
         
