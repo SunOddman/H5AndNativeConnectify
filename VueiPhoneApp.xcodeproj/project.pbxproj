@@ -18,6 +18,7 @@
 		347BEC541E9100EF00ED7873 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 347BEC531E9100EF00ED7873 /* JavaScriptCore.framework */; };
 		347BEC571E91099100ED7873 /* ThirdModuleConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BEC561E91099100ED7873 /* ThirdModuleConnectivity.swift */; };
 		347BEC591E92121100ED7873 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BEC581E92121100ED7873 /* WebView.swift */; };
+		347BEC5B1E936E1C00ED7873 /* 接口.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BEC5A1E936E1C00ED7873 /* 接口.swift */; };
 		34874DDD1E90EE5600D4AB62 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34874DDB1E90EE5600D4AB62 /* AlipaySDK.bundle */; };
 		34874DDE1E90EE5600D4AB62 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34874DDC1E90EE5600D4AB62 /* AlipaySDK.framework */; };
 		34874DE01E90F2DC00D4AB62 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34874DDF1E90F2DC00D4AB62 /* QuartzCore.framework */; };
@@ -57,6 +58,7 @@
 		347BEC551E91041D00ED7873 /* VueiPhoneApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VueiPhoneApp.entitlements; sourceTree = "<group>"; };
 		347BEC561E91099100ED7873 /* ThirdModuleConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdModuleConnectivity.swift; sourceTree = "<group>"; };
 		347BEC581E92121100ED7873 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		347BEC5A1E936E1C00ED7873 /* 接口.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "接口.swift"; sourceTree = "<group>"; };
 		34874DDB1E90EE5600D4AB62 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		34874DDC1E90EE5600D4AB62 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		34874DDF1E90F2DC00D4AB62 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -169,11 +171,12 @@
 				3455AABF1E90BA590049349A /* WeChatOpen */,
 				34BE70B51E90A4D200EC5286 /* QQOpen */,
 				34BE70A31E909C3B00EC5286 /* AppDelegate.swift */,
+				347BEC581E92121100ED7873 /* WebView.swift */,
 				34BE70CF1E90A8F100EC5286 /* Laaa.h */,
 				34BE70D01E90A8F100EC5286 /* Laaa.m */,
 				34BE70A51E909C3B00EC5286 /* ViewController.swift */,
-				347BEC581E92121100ED7873 /* WebView.swift */,
 				347BEC561E91099100ED7873 /* ThirdModuleConnectivity.swift */,
+				347BEC5A1E936E1C00ED7873 /* 接口.swift */,
 				34BE70A71E909C3B00EC5286 /* Main.storyboard */,
 				34BE70AA1E909C3B00EC5286 /* Assets.xcassets */,
 				34BE70AC1E909C3B00EC5286 /* LaunchScreen.storyboard */,
@@ -299,6 +302,7 @@
 			files = (
 				34BE70D11E90A8F100EC5286 /* Laaa.m in Sources */,
 				34BE70A61E909C3B00EC5286 /* ViewController.swift in Sources */,
+				347BEC5B1E936E1C00ED7873 /* 接口.swift in Sources */,
 				347BEC521E90F59C00ED7873 /* AliOrder.m in Sources */,
 				34BE70A41E909C3B00EC5286 /* AppDelegate.swift in Sources */,
 				347BEC571E91099100ED7873 /* ThirdModuleConnectivity.swift in Sources */,
