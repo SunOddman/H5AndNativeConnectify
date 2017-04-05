@@ -28,7 +28,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VueiPhoneApp/ViewController.swift"
-            timestampString = "512990550.053473"
+            timestampString = "513070218.951794"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -60,12 +60,12 @@
                   moduleName = "VueiPhoneApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/haidilaolzx/Desktop/VueiPhoneApp/VueiPhoneApp/ThirdModuleConnectivity.swift"
-                  timestampString = "512990827.299316"
+                  timestampString = "513070222.173251"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "85"
                   endingLineNumber = "85"
-                  offsetFromSymbolStart = "488">
+                  offsetFromSymbolStart = "590">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -75,12 +75,12 @@
                   moduleName = "VueiPhoneApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/haidilaolzx/Desktop/VueiPhoneApp/VueiPhoneApp/ThirdModuleConnectivity.swift"
-                  timestampString = "512990827.300625"
+                  timestampString = "513070222.174705"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "85"
                   endingLineNumber = "85"
-                  offsetFromSymbolStart = "16">
+                  offsetFromSymbolStart = "12">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -92,11 +92,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VueiPhoneApp/ThirdModuleConnectivity.swift"
-            timestampString = "512990827.182888"
+            timestampString = "513054453.443828"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "wxPay()"
             landmarkType = "9">
          </BreakpointContent>
@@ -108,11 +108,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VueiPhoneApp/ThirdModuleConnectivity.swift"
-            timestampString = "512990827.182888"
+            timestampString = "513054453.443828"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "wxPay()"
             landmarkType = "9">
          </BreakpointContent>
@@ -124,11 +124,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VueiPhoneApp/ThirdModuleConnectivity.swift"
-            timestampString = "512990827.182888"
+            timestampString = "513054453.443828"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "payAliPay()"
             landmarkType = "9">
          </BreakpointContent>
@@ -140,13 +140,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VueiPhoneApp/ThirdModuleConnectivity.swift"
-            timestampString = "512990819.636789"
+            timestampString = "513054453.443828"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "shareWXWeb()"
             landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VueiPhoneApp/ViewController.swift"
+            timestampString = "513070222.059832"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "webView(_:decidePolicyFor:decisionHandler:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

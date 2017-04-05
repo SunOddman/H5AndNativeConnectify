@@ -13,15 +13,18 @@ import WebKit
 
 class ViewController: UIViewController {
     
+    var reqw: URLRequest?
     @IBOutlet weak var webView: WebView!
     
     var connectivity = ThirdModuleConnectivity()
 
     @IBAction func text(_ sender: Any) {
-        
-        self.executeH5Function(functionName: "nativeObj.shareEnd", params: ["123456", "\"asdfghjh\""]) { (result: Any?, err: Error?) in
-            print("result:\(String(describing: result)) error:\(String(describing: err))")
+        if let reqw = reqw {
+            self.webView.load(reqw)
         }
+//        self.executeH5Function(functionName: "nativeObj.shareEnd", params: ["123456", "\"asdfghjh\""]) { (result: Any?, err: Error?) in
+//            print("result:\(String(describing: result)) error:\(String(describing: err))")
+//        }
     }
     
     
@@ -34,8 +37,11 @@ class ViewController: UIViewController {
         // UI 设置
         webView.scrollView.bounces = false
         webView.uiDelegate = self
+        webView.navigationDelegate = self
         
-        webView.loadUrl(string: "http://172.16.47.136:3000/Cater/mobileh5/index.html#/media/cate/60")
+        webView.loadUrl(string: "https://fir.im/j8n9")
+        //itms-services://?action=download-manifest&url=https://download.fir.im/apps/58e46888ca87a84271000102/install?download_token=fb50d8c0d7ffebb275b1a0ce98bb5912&release_id=58e46892ca87a8755e000412
+//        webView.loadUrl(string: "http://wect.haidilao.com/Cater/mobileh5/index.html#/phome")
         // http://wect.haidilao.com/Cater/mobileh5/index.html#/media/cate/60
         
         // MARK: 注册 H5用 方法
@@ -104,7 +110,18 @@ extension ViewController: WKUIDelegate {
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
+    
 }
 
+extension ViewController: WKNavigationDelegate {
+    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        let req = navigationAction.request
+        reqw = navigationAction.request
+        reqw?.url = URL(string: "https://download.fir.im/apps/58e46888ca87a84271000102/install?download_token=fb50d8c0d7ffebb275b1a0ce98bb5912&release_id=58e46892ca87a8755e000412")
+        print("\(req)")
+        decisionHandler(.allow)
+    }
+}
 
 
