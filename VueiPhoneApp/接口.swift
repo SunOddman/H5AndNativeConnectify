@@ -12,6 +12,7 @@
  * login_QQ
  Params:
  - appId
+ - permission // 一个字符串数组
 */
 
 /*

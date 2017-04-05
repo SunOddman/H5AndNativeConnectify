@@ -9,9 +9,6 @@
 import UIKit
 import WebKit
 
-
-
-
 // MARK:-
 
 class ViewController: UIViewController {
@@ -37,11 +34,11 @@ class ViewController: UIViewController {
         // UI 设置
         webView.scrollView.bounces = false
         webView.uiDelegate = self
-//        webView.load(URLRequest(url: URL(string: "https://www.baidu.com/")!))
-        webView.loadUrl(string: "http://172.16.47.136:3000/Cater/mobileh5/index.html#/pLogin")
-        // http://wect.haidilao.com/Cater/mobileh5/index.html#/media/cate/60
-        //https://www.baidu.com/
         
+        webView.loadUrl(string: "http://172.16.47.136:3000/Cater/mobileh5/index.html#/media/cate/60")
+        // http://wect.haidilao.com/Cater/mobileh5/index.html#/media/cate/60
+        
+        // MARK: 注册 H5用 方法
         // window.webkit.messageHandlers.<name>.postMessage(<messageBody>)
         webView.configuration.userContentController.add(self.connectivity, name: RespH5Type.login_QQ.rawValue)
         webView.configuration.userContentController.add(self.connectivity, name: RespH5Type.login_WeChat.rawValue)
@@ -49,8 +46,6 @@ class ViewController: UIViewController {
         webView.configuration.userContentController.add(self.connectivity, name: RespH5Type.share_WeChat_Web.rawValue)
         webView.configuration.userContentController.add(self.connectivity, name: RespH5Type.pay_Alipay.rawValue)
         webView.configuration.userContentController.add(self.connectivity, name: RespH5Type.pay_WeChat.rawValue)
-        
-        
         
     }
 
@@ -66,7 +61,7 @@ class ViewController: UIViewController {
 
         let javaScriptString = "\(functionName)(\(jsParams))"
         
-        print("源生调用H5方法：\(javaScriptString)")
+        print("----- \n 源生调用H5方法：\(javaScriptString)")
         self.webView.evaluateJavaScript(javaScriptString, completionHandler: completionHandler)
     }
 }
