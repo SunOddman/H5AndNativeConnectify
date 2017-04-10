@@ -22,18 +22,28 @@
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VueiPhoneApp/ViewController.swift"
-            timestampString = "513070218.951794"
+            filePath = "VueiPhoneApp/ThirdModuleConnectivity+Tencent.swift"
+            timestampString = "513410574.173432"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "text(_:)"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "getUserInfoResponse(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -43,44 +53,76 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VueiPhoneApp/ThirdModuleConnectivity.swift"
-            timestampString = "512990550.053473"
+            filePath = "VueiPhoneApp/ThirdModuleConnectivity+Tencent.swift"
+            timestampString = "513410575.292474"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "userContentController(_:didReceive:)"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "getUserInfoResponse(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VueiPhoneApp/ViewController.swift"
+            timestampString = "513411675.438007"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "executeH5Function(functionName:params:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VueiPhoneApp/AliPayConnectivity.swift"
+            timestampString = "513422670.967537"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "pay_alipay(orderString:appScheme:)"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "VueiPhoneApp.ThirdModuleConnectivity.userContentController (__ObjC.WKUserContentController, didReceive : __ObjC.WKScriptMessage) -&gt; ()"
+                  symbolName = "VueiPhoneApp.AliPayConnectivity.pay_alipay (orderString : Swift.String, appScheme : Swift.String) -&gt; ()"
                   moduleName = "VueiPhoneApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/haidilaolzx/Desktop/VueiPhoneApp/VueiPhoneApp/ThirdModuleConnectivity.swift"
-                  timestampString = "513070222.173251"
+                  urlString = "file:///Users/haidilaolzx/Desktop/VueiPhoneApp/VueiPhoneApp/AliPayConnectivity.swift"
+                  timestampString = "513486048.964598"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
-                  offsetFromSymbolStart = "590">
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "384">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "VueiPhoneApp.ThirdModuleConnectivity.(userContentController (__ObjC.WKUserContentController, didReceive : __ObjC.WKScriptMessage) -&gt; ()).(implicit closure #1)"
+                  symbolName = "VueiPhoneApp.AliPayConnectivity.(pay_alipay (orderString : Swift.String, appScheme : Swift.String) -&gt; ()).(closure #1)"
                   moduleName = "VueiPhoneApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/haidilaolzx/Desktop/VueiPhoneApp/VueiPhoneApp/ThirdModuleConnectivity.swift"
-                  timestampString = "513070222.174705"
+                  urlString = "file:///Users/haidilaolzx/Desktop/VueiPhoneApp/VueiPhoneApp/AliPayConnectivity.swift"
+                  timestampString = "513486048.965851"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
-                  offsetFromSymbolStart = "12">
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "32">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -91,14 +133,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VueiPhoneApp/ThirdModuleConnectivity.swift"
-            timestampString = "513054453.443828"
+            filePath = "VueiPhoneApp/WeChatConnectivity.swift"
+            timestampString = "513485927.115808"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
-            landmarkName = "wxPay()"
-            landmarkType = "9">
+            startingLineNumber = "219"
+            endingLineNumber = "219"
+            landmarkName = "pay_wechat(partnerId:prepayId:package:nonceStr:timestamp:sign:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -107,14 +149,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VueiPhoneApp/ThirdModuleConnectivity.swift"
-            timestampString = "513054453.443828"
+            filePath = "VueiPhoneApp/WeChatConnectivity.swift"
+            timestampString = "513485927.115808"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
-            landmarkName = "wxPay()"
-            landmarkType = "9">
+            startingLineNumber = "232"
+            endingLineNumber = "232"
+            landmarkName = "pay_wechat(partnerId:prepayId:package:nonceStr:timestamp:sign:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -123,14 +165,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VueiPhoneApp/ThirdModuleConnectivity.swift"
-            timestampString = "513054453.443828"
+            filePath = "VueiPhoneApp/WeChatConnectivity.swift"
+            timestampString = "513485927.115808"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "164"
-            endingLineNumber = "164"
-            landmarkName = "payAliPay()"
-            landmarkType = "9">
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "onResp(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -139,14 +181,46 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "VueiPhoneApp/ThirdModuleConnectivity.swift"
-            timestampString = "513054453.443828"
+            filePath = "VueiPhoneApp/AliPayConnectivity.swift"
+            timestampString = "513422701.394337"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
-            landmarkName = "shareWXWeb()"
-            landmarkType = "9">
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "pay_alipay(orderString:appScheme:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VueiPhoneApp.AliPayConnectivity.(pay_alipay (orderString : Swift.String, appScheme : Swift.String) -&gt; ()).(closure #1)"
+                  moduleName = "VueiPhoneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/haidilaolzx/Desktop/VueiPhoneApp/VueiPhoneApp/AliPayConnectivity.swift"
+                  timestampString = "513486048.976382"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VueiPhoneApp.AliPayConnectivity.(pay_alipay (orderString : Swift.String, appScheme : Swift.String) -&gt; ()).(closure #1).(implicit closure #1)"
+                  moduleName = "VueiPhoneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/haidilaolzx/Desktop/VueiPhoneApp/VueiPhoneApp/AliPayConnectivity.swift"
+                  timestampString = "513486048.977691"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -156,13 +230,77 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "VueiPhoneApp/ViewController.swift"
-            timestampString = "513070222.059832"
+            timestampString = "513427345.313928"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
-            landmarkName = "webView(_:decidePolicyFor:decisionHandler:)"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "webView(_:runJavaScriptConfirmPanelWithMessage:initiatedByFrame:completionHandler:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VueiPhoneApp/ViewController.swift"
+            timestampString = "513427346.914071"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "webView(_:runJavaScriptTextInputPanelWithPrompt:defaultText:initiatedByFrame:completionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VueiPhoneApp.ViewController.webView (__ObjC.WKWebView, runJavaScriptTextInputPanelWithPrompt : Swift.String, defaultText : Swift.Optional&lt;Swift.String&gt;, initiatedByFrame : __ObjC.WKFrameInfo, completionHandler : (Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "VueiPhoneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/haidilaolzx/Desktop/VueiPhoneApp/VueiPhoneApp/ViewController.swift"
+                  timestampString = "513486048.984128"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "276">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VueiPhoneApp.ViewController.(webView (__ObjC.WKWebView, runJavaScriptTextInputPanelWithPrompt : Swift.String, defaultText : Swift.Optional&lt;Swift.String&gt;, initiatedByFrame : __ObjC.WKFrameInfo, completionHandler : (Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "VueiPhoneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/haidilaolzx/Desktop/VueiPhoneApp/VueiPhoneApp/ViewController.swift"
+                  timestampString = "513486048.985999"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "112"
+                  endingLineNumber = "112"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VueiPhoneApp/WeChatConnectivity.swift"
+            timestampString = "513485934.498153"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "filterFiled()"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

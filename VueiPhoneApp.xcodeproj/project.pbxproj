@@ -19,9 +19,9 @@
 		347BEC571E91099100ED7873 /* ThirdModuleConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BEC561E91099100ED7873 /* ThirdModuleConnectivity.swift */; };
 		347BEC591E92121100ED7873 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BEC581E92121100ED7873 /* WebView.swift */; };
 		347BEC5B1E936E1C00ED7873 /* 接口.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BEC5A1E936E1C00ED7873 /* 接口.swift */; };
-		347BEC5F1E939AF700ED7873 /* ThirdModuleConnectivity+WeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BEC5E1E939AF700ED7873 /* ThirdModuleConnectivity+WeChat.swift */; };
-		347BEC611E939B1E00ED7873 /* ThirdModuleConnectivity+Tencent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BEC601E939B1E00ED7873 /* ThirdModuleConnectivity+Tencent.swift */; };
-		347BEC631E939B5700ED7873 /* ThirdModuleConnectivity+Alipay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BEC621E939B5700ED7873 /* ThirdModuleConnectivity+Alipay.swift */; };
+		347BEC5F1E939AF700ED7873 /* WeChatConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BEC5E1E939AF700ED7873 /* WeChatConnectivity.swift */; };
+		347BEC611E939B1E00ED7873 /* TencentConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BEC601E939B1E00ED7873 /* TencentConnectivity.swift */; };
+		347BEC631E939B5700ED7873 /* AliPayConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347BEC621E939B5700ED7873 /* AliPayConnectivity.swift */; };
 		34874DDD1E90EE5600D4AB62 /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 34874DDB1E90EE5600D4AB62 /* AlipaySDK.bundle */; };
 		34874DDE1E90EE5600D4AB62 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34874DDC1E90EE5600D4AB62 /* AlipaySDK.framework */; };
 		34874DE01E90F2DC00D4AB62 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34874DDF1E90F2DC00D4AB62 /* QuartzCore.framework */; };
@@ -29,10 +29,11 @@
 		34874DE41E90F30200D4AB62 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34874DE31E90F30200D4AB62 /* UIKit.framework */; };
 		34874DE61E90F30A00D4AB62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34874DE51E90F30A00D4AB62 /* Foundation.framework */; };
 		34874DE81E90F31200D4AB62 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34874DE71E90F31200D4AB62 /* CoreMotion.framework */; };
+		348E02881E98C3BC00DDA214 /* LaunchAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348E02871E98C3BC00DDA214 /* LaunchAnimation.swift */; };
+		34B844C41E98BC8900007AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34B844C31E98BC8900007AAD /* Assets.xcassets */; };
 		34BE70A41E909C3B00EC5286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE70A31E909C3B00EC5286 /* AppDelegate.swift */; };
 		34BE70A61E909C3B00EC5286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BE70A51E909C3B00EC5286 /* ViewController.swift */; };
 		34BE70A91E909C3B00EC5286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34BE70A71E909C3B00EC5286 /* Main.storyboard */; };
-		34BE70AB1E909C3B00EC5286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BE70AA1E909C3B00EC5286 /* Assets.xcassets */; };
 		34BE70AE1E909C3B00EC5286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34BE70AC1E909C3B00EC5286 /* LaunchScreen.storyboard */; };
 		34BE70BC1E90A54100EC5286 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BE70BB1E90A54100EC5286 /* Security.framework */; };
 		34BE70BE1E90A54900EC5286 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34BE70BD1E90A54900EC5286 /* SystemConfiguration.framework */; };
@@ -62,9 +63,9 @@
 		347BEC561E91099100ED7873 /* ThirdModuleConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdModuleConnectivity.swift; sourceTree = "<group>"; };
 		347BEC581E92121100ED7873 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		347BEC5A1E936E1C00ED7873 /* 接口.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "接口.swift"; sourceTree = "<group>"; };
-		347BEC5E1E939AF700ED7873 /* ThirdModuleConnectivity+WeChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThirdModuleConnectivity+WeChat.swift"; sourceTree = "<group>"; };
-		347BEC601E939B1E00ED7873 /* ThirdModuleConnectivity+Tencent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThirdModuleConnectivity+Tencent.swift"; sourceTree = "<group>"; };
-		347BEC621E939B5700ED7873 /* ThirdModuleConnectivity+Alipay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ThirdModuleConnectivity+Alipay.swift"; sourceTree = "<group>"; };
+		347BEC5E1E939AF700ED7873 /* WeChatConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeChatConnectivity.swift; sourceTree = "<group>"; };
+		347BEC601E939B1E00ED7873 /* TencentConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TencentConnectivity.swift; sourceTree = "<group>"; };
+		347BEC621E939B5700ED7873 /* AliPayConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AliPayConnectivity.swift; sourceTree = "<group>"; };
 		34874DDB1E90EE5600D4AB62 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
 		34874DDC1E90EE5600D4AB62 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
 		34874DDF1E90F2DC00D4AB62 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -72,11 +73,12 @@
 		34874DE31E90F30200D4AB62 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		34874DE51E90F30A00D4AB62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		34874DE71E90F31200D4AB62 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		348E02871E98C3BC00DDA214 /* LaunchAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchAnimation.swift; sourceTree = "<group>"; };
+		34B844C31E98BC8900007AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34BE70A01E909C3B00EC5286 /* VueiPhoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VueiPhoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34BE70A31E909C3B00EC5286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34BE70A51E909C3B00EC5286 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		34BE70A81E909C3B00EC5286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		34BE70AA1E909C3B00EC5286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34BE70AD1E909C3B00EC5286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34BE70AF1E909C3B00EC5286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34BE70BB1E90A54100EC5286 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -182,12 +184,13 @@
 				34BE70D01E90A8F100EC5286 /* Laaa.m */,
 				34BE70A51E909C3B00EC5286 /* ViewController.swift */,
 				347BEC561E91099100ED7873 /* ThirdModuleConnectivity.swift */,
-				347BEC621E939B5700ED7873 /* ThirdModuleConnectivity+Alipay.swift */,
-				347BEC5E1E939AF700ED7873 /* ThirdModuleConnectivity+WeChat.swift */,
-				347BEC601E939B1E00ED7873 /* ThirdModuleConnectivity+Tencent.swift */,
+				347BEC621E939B5700ED7873 /* AliPayConnectivity.swift */,
+				347BEC5E1E939AF700ED7873 /* WeChatConnectivity.swift */,
+				347BEC601E939B1E00ED7873 /* TencentConnectivity.swift */,
 				347BEC5A1E936E1C00ED7873 /* 接口.swift */,
+				34B844C31E98BC8900007AAD /* Assets.xcassets */,
 				34BE70A71E909C3B00EC5286 /* Main.storyboard */,
-				34BE70AA1E909C3B00EC5286 /* Assets.xcassets */,
+				348E02871E98C3BC00DDA214 /* LaunchAnimation.swift */,
 				34BE70AC1E909C3B00EC5286 /* LaunchScreen.storyboard */,
 				34BE70AF1E909C3B00EC5286 /* Info.plist */,
 				34BE70CE1E90A8F100EC5286 /* VueiPhoneApp-Bridging-Header.h */,
@@ -259,7 +262,7 @@
 				TargetAttributes = {
 					34BE709F1E909C3B00EC5286 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = J6554N9927;
+						DevelopmentTeam = 5DQRZCWA5N;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -296,8 +299,8 @@
 				34874DDD1E90EE5600D4AB62 /* AlipaySDK.bundle in Resources */,
 				34BE70CB1E90A5FD00EC5286 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				34BE70AE1E909C3B00EC5286 /* LaunchScreen.storyboard in Resources */,
-				34BE70AB1E909C3B00EC5286 /* Assets.xcassets in Resources */,
 				34BE70A91E909C3B00EC5286 /* Main.storyboard in Resources */,
+				34B844C41E98BC8900007AAD /* Assets.xcassets in Resources */,
 				3455AAC71E90BA6E0049349A /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,15 +312,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				347BEC631E939B5700ED7873 /* ThirdModuleConnectivity+Alipay.swift in Sources */,
+				347BEC631E939B5700ED7873 /* AliPayConnectivity.swift in Sources */,
 				34BE70D11E90A8F100EC5286 /* Laaa.m in Sources */,
 				34BE70A61E909C3B00EC5286 /* ViewController.swift in Sources */,
 				347BEC5B1E936E1C00ED7873 /* 接口.swift in Sources */,
 				347BEC521E90F59C00ED7873 /* AliOrder.m in Sources */,
 				34BE70A41E909C3B00EC5286 /* AppDelegate.swift in Sources */,
 				347BEC571E91099100ED7873 /* ThirdModuleConnectivity.swift in Sources */,
-				347BEC5F1E939AF700ED7873 /* ThirdModuleConnectivity+WeChat.swift in Sources */,
-				347BEC611E939B1E00ED7873 /* ThirdModuleConnectivity+Tencent.swift in Sources */,
+				348E02881E98C3BC00DDA214 /* LaunchAnimation.swift in Sources */,
+				347BEC5F1E939AF700ED7873 /* WeChatConnectivity.swift in Sources */,
+				347BEC611E939B1E00ED7873 /* TencentConnectivity.swift in Sources */,
 				347BEC591E92121100ED7873 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +448,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = J6554N9927;
+				DEVELOPMENT_TEAM = 5DQRZCWA5N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VueiPhoneApp",
@@ -462,7 +466,7 @@
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hdl.VueiPhoneApp;
+				PRODUCT_BUNDLE_IDENTIFIER = app.haidilao.HaidilaoMobileDistribution;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "VueiPhoneApp/VueiPhoneApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -475,7 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = J6554N9927;
+				DEVELOPMENT_TEAM = 5DQRZCWA5N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/VueiPhoneApp",
@@ -493,7 +497,7 @@
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hdl.VueiPhoneApp;
+				PRODUCT_BUNDLE_IDENTIFIER = app.haidilao.HaidilaoMobileDistribution;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "VueiPhoneApp/VueiPhoneApp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

@@ -31,10 +31,14 @@ enum MessageLevelType: Int {
 
 /// 调用H5方法列表
 enum ReqH5Type: String {
-    case paySuccess = "paySuccess"
-    case otherLoginSuccess = "otherLoginSuccess"
-    case shareSuccess = "shareSuccess"
-    case nativeError = "nativeError"
+    case commonMsg = "commonMsg"
+    case qqLogin = "qqLogin"
+    case weChatLogin = "wxLogin"
+    case weChatShare = "wxShare"
+    case weChatPay = "wxPay"
+    case aliPay = "zfbPay"
+    //----- no use -----
+    case qqShare = "qqShare"
     case addCard = "addCard"
     case chooseCard = "chooseCard"
 }
@@ -52,7 +56,8 @@ enum RespH5Type: String {
 // MARK:-
 class ThirdModuleConnectivity: NSObject {
     
-    var tencentOauth: TencentOAuth?
+    static let shared = ThirdModuleConnectivity()
+    
     
     var webVc: ViewController {
         get {
@@ -61,14 +66,23 @@ class ThirdModuleConnectivity: NSObject {
         }
     }
     
+    let connectivityWechat = WeChatConnectivity()
+    let connectivityTencent = TencentConnectivity()
+    let connectivityAli = AliPayConnectivity()
     
     func messageHappend(reqType: ReqH5Type, message: String, messageLevel: MessageLevelType, params: [String: String]?) {
-        print("----- \n messageHappend: \(messageLevel):\n\t \(message)")
+        print("----- \n 调用H5方法：【\(reqType.rawValue)】\n\t 消息: \(message) \n\t level: \(messageLevel)\n\t params: \(params ?? [:])")
         
         // TODO: 给H5发送消息
-        let reqParams = ["\(message)", "\(messageLevel)", "\(params ?? [:])"]
         
-        webVc.executeH5Function(functionName: reqType.rawValue,
+        
+        let reqParams = [
+            "\"\(reqType.rawValue)\"",
+            "\"\(message)\"",
+            "\"\(messageLevel)\"",
+            "'\(params ?? [:])'"]
+        
+        webVc.executeH5Function(functionName: "nativeObj.receiveNativeMsg",
                                 params: reqParams) { (result: Any?, error: Error?) in
             print("----- \n 调用H5结果：\(String(describing: result)) \n 错误：\(String(describing: error))")
         }
@@ -80,7 +94,7 @@ class ThirdModuleConnectivity: NSObject {
 extension ThirdModuleConnectivity: WKScriptMessageHandler {
     
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        messageHappend(reqType: .nativeError, message: "----- \n 调H5调用本地方法：【\(message.name)】，参数：【\(message.body)】", messageLevel: .log, params: nil)
+        ThirdModuleConnectivity.shared.messageHappend(reqType: .commonMsg, message: "----- \n 调H5调用本地方法：【\(message.name)】\n 参数：【\(message.body)】", messageLevel: .log, params: nil)
         
         let params = message.body as? [String : String] ?? [:]
         
@@ -91,24 +105,25 @@ extension ThirdModuleConnectivity: WKScriptMessageHandler {
                 let appId = params["appId"] as? String,
                 let permission = params["permission"] as? [String]
             else {
-                messageHappend(reqType: .nativeError, message: "参数错误", messageLevel: .error, params: nil)
+                ThirdModuleConnectivity.shared.messageHappend(reqType: .commonMsg, message: "参数错误", messageLevel: .error, params: nil)
                 return
             }
-            self.tencentLogin(appId: appId, permission: permission)
+            self.connectivityTencent.tencentLogin(appId: appId, permission: permission)
         }
         
         // MARK: 微信登录
         func wxLogin() {
             guard
                 let appId = params["appId"],
+                let appSecret = params["appSecret"],
                 let scope = params["scope"],
                 let state = params["state"]
             else {
-                    messageHappend(reqType: .nativeError, message: "参数错误", messageLevel: .error, params: nil)
+                    ThirdModuleConnectivity.shared.messageHappend(reqType: .commonMsg, message: "参数错误", messageLevel: .error, params: nil)
                     return
             }
-            self.registerWeChat(appId: appId)
-            self.wechatLogin(scope: scope, state: state)
+            self.connectivityWechat.registerWeChat(appId: appId, appSecret: appSecret)
+            self.connectivityWechat.wechatLogin(scope: scope, state: state)
         }
         
         // MARK: QQ分享 网页
@@ -120,26 +135,27 @@ extension ThirdModuleConnectivity: WKScriptMessageHandler {
                 let webPageURL = params["webPageURL"],
                 let shareType = UInt32(params["shareType"] ?? "1")
             else {
-                messageHappend(reqType: .nativeError, message: "参数错误", messageLevel: .error, params: nil)
+                ThirdModuleConnectivity.shared.messageHappend(reqType: .commonMsg, message: "参数错误", messageLevel: .error, params: nil)
                 return
             }
-            self.share_qq_Web(title: title, description: description, previewImageUrl: previewImageUrl, webPageURL: webPageURL, shareType: ShareDestType(rawValue: shareType))
+            self.connectivityTencent.share_qq_Web(title: title, description: description, previewImageUrl: previewImageUrl, webPageURL: webPageURL, shareType: ShareDestType(rawValue: shareType))
         }
         
         // MARK: 微信分享 网页
         func shareWXWeb() {
             guard
                 let appId = params["appId"],
+                let appSecret = params["appSecret"],
                 let title = params["title"],
                 let description = params["description"],
                 let imageUrlStr = params["imageUrl"],
                 let webPageURL = params["webPageURL"],
                 let scene = UInt32(params["scene"] ?? "0")
             else {
-                messageHappend(reqType: .nativeError, message: "参数错误", messageLevel: .error, params: nil)
+                ThirdModuleConnectivity.shared.messageHappend(reqType: .commonMsg, message: "参数错误", messageLevel: .error, params: nil)
                 return
             }
-            self.registerWeChat(appId: appId)
+            self.connectivityWechat.registerWeChat(appId: appId, appSecret: appSecret)
             var image: UIImage = UIImage()
             if
                 let imageURL = URL(string: imageUrlStr),
@@ -148,7 +164,7 @@ extension ThirdModuleConnectivity: WKScriptMessageHandler {
                 image = UIImage(data: data) ?? UIImage()
             }
             
-            self.share_wechat_Web(title: title, description: description, image: image , webPageURL: webPageURL, scene: WXScene(rawValue: scene))
+            self.connectivityWechat.share_wechat_Web(title: title, description: description, image: image , webPageURL: webPageURL, scene: WXScene(rawValue: scene))
             
         }
         
@@ -158,16 +174,17 @@ extension ThirdModuleConnectivity: WKScriptMessageHandler {
                 let orderString = params["orderString"],
                 let appScheme = params["appScheme"]
             else {
-                messageHappend(reqType: .nativeError, message: "参数错误", messageLevel: .error, params: nil)
+                ThirdModuleConnectivity.shared.messageHappend(reqType: .commonMsg, message: "参数错误", messageLevel: .error, params: nil)
                 return
             }
-            self.pay_alipay(orderString: orderString, appScheme: appScheme)
+            self.connectivityAli.pay_alipay(orderString: orderString, appScheme: appScheme)
         }
         
         // MARK: 微信支付
         func wxPay() {
             guard
                 let appId = params["appId"],
+                let appSecret = params["appSecret"],
                 let partnerId = params["partnerId"],
                 let prepayId = params["prepayId"],
                 let package = params["package"],
@@ -175,11 +192,11 @@ extension ThirdModuleConnectivity: WKScriptMessageHandler {
                 let timestamp = params["timestamp"],
                 let sign = params["sign"]
             else {
-                    messageHappend(reqType: .nativeError, message: "参数错误", messageLevel: .error, params: nil)
+                    ThirdModuleConnectivity.shared.messageHappend(reqType: .commonMsg, message: "参数错误", messageLevel: .error, params: nil)
                     return
             }
-            self.registerWeChat(appId: appId)
-            self.pay_wechat(partnerId: partnerId, prepayId: prepayId, package: package, nonceStr: nonceStr, timestamp: timestamp, sign: sign)
+            self.connectivityWechat.registerWeChat(appId: appId, appSecret: appSecret)
+            self.connectivityWechat.pay_wechat(partnerId: partnerId, prepayId: prepayId, package: package, nonceStr: nonceStr, timestamp: timestamp, sign: sign)
         }
         
         if let fun_type = RespH5Type(rawValue: message.name) {
@@ -198,7 +215,7 @@ extension ThirdModuleConnectivity: WKScriptMessageHandler {
                 wxPay()
             }
         } else {
-            messageHappend(reqType: .nativeError, message: "没有找到调用的方法", messageLevel: .error, params: nil)
+            ThirdModuleConnectivity.shared.messageHappend(reqType: .commonMsg, message: "没有找到调用的方法", messageLevel: .error, params: nil)
         }
         
     }

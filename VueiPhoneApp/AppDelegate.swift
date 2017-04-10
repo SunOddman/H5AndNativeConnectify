@@ -19,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        let lauchVc: UIViewController = UIStoryboard.init(name: "LaunchScreen", bundle: nil)
+        
         return true
     }
 
@@ -50,14 +52,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
         // 腾讯开发平台
         let tencent = TencentOAuth.handleOpen(url)
-        let wechat = WXApi.handleOpen(url, delegate: self.webVc?.connectivity)
+        let wechat = WXApi.handleOpen(url, delegate: ThirdModuleConnectivity.shared.connectivityWechat)
         return tencent || wechat
     }
     
     /// OpenURL
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         let tencent = TencentOAuth.handleOpen(url)
-        let wechat = WXApi.handleOpen(url, delegate: self.webVc?.connectivity)
+        let wechat = WXApi.handleOpen(url, delegate: ThirdModuleConnectivity.shared.connectivityWechat)
         return tencent || wechat
     }
 

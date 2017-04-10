@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pZe-A0-0xk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,104 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--启动图-->
+        <scene sceneID="teT-zH-JeC">
+            <objects>
+                <viewController title="启动图" id="pZe-A0-0xk" customClass="LaunchAnimation" customModule="VueiPhoneApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="71T-Lb-yDI"/>
+                        <viewControllerLayoutGuide type="bottom" id="w80-o0-xHq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="axo-y2-SGd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02" translatesAutoresizingMaskIntoConstraints="NO" id="9Tc-P2-Fev" userLabel="bgImg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="02" translatesAutoresizingMaskIntoConstraints="NO" id="JNb-Lm-7Tp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01" translatesAutoresizingMaskIntoConstraints="NO" id="6H1-Ze-hV2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w80-o0-xHq" firstAttribute="top" secondItem="9Tc-P2-Fev" secondAttribute="bottom" id="376-7B-wXu"/>
+                            <constraint firstItem="w80-o0-xHq" firstAttribute="top" secondItem="JNb-Lm-7Tp" secondAttribute="bottom" id="6lX-Zf-zUw"/>
+                            <constraint firstAttribute="trailing" secondItem="JNb-Lm-7Tp" secondAttribute="trailing" id="9vi-ae-KHk"/>
+                            <constraint firstAttribute="trailing" secondItem="9Tc-P2-Fev" secondAttribute="trailing" id="Brq-3o-PTS"/>
+                            <constraint firstItem="9Tc-P2-Fev" firstAttribute="top" secondItem="axo-y2-SGd" secondAttribute="top" id="En3-H4-j8N"/>
+                            <constraint firstItem="9Tc-P2-Fev" firstAttribute="leading" secondItem="axo-y2-SGd" secondAttribute="leading" id="J25-gL-zSi"/>
+                            <constraint firstItem="6H1-Ze-hV2" firstAttribute="leading" secondItem="axo-y2-SGd" secondAttribute="leading" id="MQd-Rz-hkY"/>
+                            <constraint firstItem="6H1-Ze-hV2" firstAttribute="top" secondItem="axo-y2-SGd" secondAttribute="top" id="NGx-h7-azJ"/>
+                            <constraint firstAttribute="trailing" secondItem="6H1-Ze-hV2" secondAttribute="trailing" id="UAH-0B-42O"/>
+                            <constraint firstItem="JNb-Lm-7Tp" firstAttribute="leading" secondItem="axo-y2-SGd" secondAttribute="leading" id="b4J-Ug-YCe"/>
+                            <constraint firstItem="w80-o0-xHq" firstAttribute="top" secondItem="6H1-Ze-hV2" secondAttribute="bottom" id="b81-gB-DOJ"/>
+                            <constraint firstItem="JNb-Lm-7Tp" firstAttribute="top" secondItem="axo-y2-SGd" secondAttribute="top" id="cA4-Iu-Ryg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="launchImage1" destination="6H1-Ze-hV2" id="W6C-sK-pNL"/>
+                        <outlet property="launchImage2" destination="JNb-Lm-7Tp" id="9op-Ga-Zhj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLR-TG-tW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1455.2" y="123.68815592203899"/>
+        </scene>
+        <!--新特性-->
+        <scene sceneID="oIe-XO-kZ4">
+            <objects>
+                <viewController storyboardIdentifier="NewFeature" title="新特性" id="SH1-Jy-fYF" customClass="NewFeatureVc" customModule="VueiPhoneApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zmf-HH-xrN"/>
+                        <viewControllerLayoutGuide type="bottom" id="eoE-ts-6nT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vuH-Mf-WTf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wo8-wi-owf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eof-9C-tOi">
+                                <rect key="frame" x="291" y="35" width="64" height="32"/>
+                                <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="bzj-ZB-sNr"/>
+                                    <constraint firstAttribute="width" constant="64" id="usR-0e-ac3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="跳过"/>
+                                <connections>
+                                    <action selector="skipAction:" destination="SH1-Jy-fYF" eventType="touchUpInside" id="JPG-dL-eFf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eof-9C-tOi" firstAttribute="trailing" secondItem="Wo8-wi-owf" secondAttribute="trailing" constant="-20" id="E0y-zc-EfM"/>
+                            <constraint firstItem="Wo8-wi-owf" firstAttribute="top" secondItem="vuH-Mf-WTf" secondAttribute="top" id="a9G-n1-K0C"/>
+                            <constraint firstItem="eoE-ts-6nT" firstAttribute="top" secondItem="Wo8-wi-owf" secondAttribute="bottom" id="doh-kJ-2qv"/>
+                            <constraint firstItem="eof-9C-tOi" firstAttribute="top" secondItem="Wo8-wi-owf" secondAttribute="top" constant="35" id="pGN-ev-83w"/>
+                            <constraint firstItem="Wo8-wi-owf" firstAttribute="leading" secondItem="vuH-Mf-WTf" secondAttribute="leading" id="ugz-jS-hkA"/>
+                            <constraint firstAttribute="trailing" secondItem="Wo8-wi-owf" secondAttribute="trailing" id="vap-aj-7Zh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="Wo8-wi-owf" id="hfI-kf-RzW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ODQ-YB-6MM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-666.39999999999998" y="123.68815592203899"/>
+        </scene>
+        <!--WebView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VueiPhoneApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" title="WebView" id="BYZ-38-t0r" customClass="ViewController" customModule="VueiPhoneApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -51,4 +145,8 @@
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="01" width="375" height="667"/>
+        <image name="02" width="750" height="1334"/>
+    </resources>
 </document>

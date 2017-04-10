@@ -21,6 +21,7 @@
  * login_WeChat
  Params:
  - appId
+ - appSecret
  - scope
  - state
  */
@@ -45,6 +46,7 @@
  
  Params:
  - appId
+ - appSecret
  - title
  - description
  - imageUrl
@@ -69,6 +71,7 @@
  
  Params:
  - appId
+ - appSecret
  - partnerId
  - prepayId
  - package

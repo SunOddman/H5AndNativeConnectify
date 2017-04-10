@@ -25,7 +25,7 @@
 			<string>QQ</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>tencent1106080432</string>
+				<string>tencent101251367</string>
 			</array>
 		</dict>
 		<dict>
@@ -35,7 +35,7 @@
 			<string>WeChat</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wechat123456</string>
+				<string>wxd8e8753b2226c249</string>
 			</array>
 		</dict>
 	</array>
@@ -87,8 +87,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
