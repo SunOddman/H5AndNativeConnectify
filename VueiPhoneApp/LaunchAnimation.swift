@@ -72,6 +72,9 @@ class LaunchAnimation: UIViewController {
         // TODO: 设置主页
         self.homeVc = self.featureStoryboard.instantiateViewController(withIdentifier: "ViewController")
         
+        // 设置启动图
+        self.pageData = ["1", "2", "3"]
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -88,7 +91,7 @@ class LaunchAnimation: UIViewController {
     
     func showFeatureAndHome() {
         
-        self.pageData = ["1", "2", "3"]
+//        self.pageData = ["1", "2", "3"]
         let startingViewController: UIViewController = self.featureVc(atIndex: 0)!
         let viewControllers = [startingViewController]
         self.pageViewController.setViewControllers(viewControllers, direction: .forward, animated: false, completion: {done in })
@@ -99,6 +102,10 @@ class LaunchAnimation: UIViewController {
         }, completion: { (finish2) in
         })
     }
+    
+//    func clearFeatureData() {
+//        self.pageData = []
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -131,7 +138,6 @@ extension LaunchAnimation: UIPageViewControllerDataSource, SkipToHomeDelegate {
         
         // MARK: 设置最后一个控制器
         if index == self.pageData.count {
-            self.pageData = []
             return self.homeVc
         }
         
@@ -151,7 +157,6 @@ extension LaunchAnimation: UIPageViewControllerDataSource, SkipToHomeDelegate {
     
     // MARK:- 跳过
     func skipToHomeVc() {
-        self.pageData = []
         self.pageViewController.setViewControllers([self.homeVc!], direction: .forward, animated: true) { (done) in
             
         }

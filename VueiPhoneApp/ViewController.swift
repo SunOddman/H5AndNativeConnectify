@@ -43,6 +43,7 @@ class ViewController: UIViewController {
         
 //        self.reqw = "http://172.16.47.9:3000/Cater/mobileh6/index.html#/phome"
         self.reqw = "http://wect.haidilao.com/Cater/mobileh6/index.html#/phome"
+//        self.reqw = "http://172.16.47.175/Cater/web/lostandfound/page/add.jsp"
         webView.loadUrl(string: self.reqw!)
         
         // MARK: 注册 H5用 方法
@@ -53,6 +54,7 @@ class ViewController: UIViewController {
         webView.configuration.userContentController.add(self.connectivity, name: RespH5Type.share_WeChat_Web.rawValue)
         webView.configuration.userContentController.add(self.connectivity, name: RespH5Type.pay_Alipay.rawValue)
         webView.configuration.userContentController.add(self.connectivity, name: RespH5Type.pay_WeChat.rawValue)
+        
         
     }
     
